@@ -1,0 +1,71 @@
+
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+    --sanaka: #b33b17;
+    --grisClaro: #DFE9F3;
+    --fuente-principal: 3.8rem;
+}
+
+/** Globales **/
+html{
+    font-size: 62.5%;
+    box-sizing: border-box; /** Hack para Box Model **/
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+
+.encabezado{
+    background-color: var(--oscuro);
+    padding: 3rem 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.encabezado h1{
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 5rem;
+    margin: 0;
+    color: var(--gris);
+}
+
+.tala{
+    color: var(--sanaka);
+}
+
+.contenedor-buscador{
+    display: flex;
+    width: 70%;
+}
+
+.buscador{
+    height: 4rem;
+    width: 75%;
+    background-color: var(--oscuro);
+    border: 1px solid var(--gris);
+    font-size: 1.5rem;
+    color: var(--gris);
+}
+
+.buscador::placeholder{
+    color: var(--grisClaro);
+}
+
+.icono{
+    background-color: var(--grisClaro);
+    cursor: pointer;
+    height: 4rem;
+}
+
+
+.encabezado-right{
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
