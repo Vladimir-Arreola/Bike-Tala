@@ -5,8 +5,9 @@
     --primario: #ffc107;
     --secundario: #0097a7;
     --gris: #757575;
-    --sanaka: #b33b17;
-    --grisClaro: #DFE9F3;
+    --naranja: #b33b17;
+    --naranjaClaro: #c25f41;
+    --grisClaro: #d4d4d4;
     --fuente-principal: 3.8rem;
 }
 
@@ -14,6 +15,7 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box; /** Hack para Box Model **/
+    font-family: 'Gemunu Libre', sans-serif;
 }
 
 *, *:before, *:after {
@@ -29,24 +31,34 @@ html{
 }
 
 .encabezado h1{
-    font-family: 'Gemunu Libre', sans-serif;
     font-size: 5rem;
     margin: 0;
     color: var(--gris);
 }
 
 .tala{
-    color: var(--sanaka);
+    color: var(--naranja);
 }
 
 .contenedor-buscador{
     display: flex;
-    width: 70%;
+    width: 50%;
+    background-color: var(--gris);
+}
+
+.contenedor-section{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2.2rem;
+}
+
+.contenedor-section h2{
+    text-align: center;
 }
 
 .buscador{
     height: 4rem;
-    width: 75%;
+    width: 95%;
     background-color: var(--oscuro);
     border: 1px solid var(--gris);
     font-size: 1.5rem;
@@ -63,9 +75,121 @@ html{
     height: 4rem;
 }
 
+.iconos-redondos{
+    background-color: var(--grisClaro);
+    border-radius: 50%;
+    padding: .8rem;
+    margin: 0 .05rem;
+}
+
 
 .encabezado-right{
     width: 75%;
     display: flex;
+    align-items: center;
+}
+
+.contenedor-iconos{
+    padding: 0 2rem;
+    
+}
+
+.navegacion{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--naranja);
+    
+}
+
+.enlaces{
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 1rem;
+}
+
+.enlaces:hover{
+    background-color: var(--naranjaClaro);
+}
+
+.productos{
+    text-align: center;
+}
+
+.show-productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.img-producto{
+    width: 33%;
+    height: 10rem;
+}
+
+.card-producto{
+    padding: 3rem 0;
+    border-bottom: 1px solid gray;
+    margin-right: 5px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 11px 15px -8px #000000; 
+    box-shadow: 0px 11px 15px -8px #000000;
+}
+
+
+
+.division-producto{
+    width: 90%;
+}
+
+.descripcion{
+    padding-left: 1rem;
+    text-align: left;
+}
+
+.descripcion p{
+    margin: 0;
+}
+
+.precio{
+    color: var(--naranja);
+}
+
+.img-nosotros{
+    width: 50rem;
+}
+
+.contenido-nosotros{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+
+/* Footer */
+
+.pie{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 7rem;
+    background-color: var(--oscuro);
+    text-align: center;
+    color: var(--blanco);
+    font-size: 1.4rem;
+}
+
+.contenido-contacto{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 3rem;
+}
+
+.card-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
